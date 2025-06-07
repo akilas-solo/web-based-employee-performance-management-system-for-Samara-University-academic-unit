@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samara University - Admin Setup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #22AE9A;
+            text-align: center;
+        }
+        h2 {
+            color: #1c8e7d;
+        }
+        .step {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #22AE9A;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #22AE9A;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+        .btn:hover {
+            background-color: #1c8e7d;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+        .credentials {
+            background-color: #e7f7f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Samara University Admin Setup</h1>
+
+        <div class="step">
+            <h2>Step 1: Check Database Connection</h2>
+            <p>First, let's verify that your database connection is working properly.</p>
+            <a href="check_db.php" class="btn">Check Database Connection</a>
+        </div>
+
+        <div class="step">
+            <h2>Step 2: Create Admin User</h2>
+            <p>If the admin user doesn't exist in your database, this script will create it for you.</p>
+            <a href="check_admin.php" class="btn">Create/Check Admin User</a>
+        </div>
+
+        <div class="step">
+            <h2>Step 3: Reset Admin Password</h2>
+            <p>If you're having trouble logging in, you can reset the admin password to the default.</p>
+            <a href="reset_admin_password.php" class="btn">Reset Admin Password</a>
+        </div>
+
+        <div class="step">
+            <h2>Step 4: Login to the System</h2>
+            <p>Once the admin user is created, you can log in with the following credentials:</p>
+            <div class="credentials">
+                <p><strong>Email:</strong> admin@samarauniversity.edu.et</p>
+                <p><strong>Password:</strong> password</p>
+                <p><strong>Role:</strong> Admin</p>
+            </div>
+            <a href="login.php" class="btn">Go to Login Page</a>
+        </div>
+
+        <div class="step">
+            <h2>Troubleshooting</h2>
+            <p>If you're still having issues logging in:</p>
+            <ol>
+                <li>Make sure your database server is running</li>
+                <li>Verify that the database <code>samara_evaluation</code> exists</li>
+                <li>Check that all tables have been created properly</li>
+                <li>Ensure that the admin user exists in the <code>users</code> table</li>
+                <li>Make sure the password is correctly hashed in the database</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

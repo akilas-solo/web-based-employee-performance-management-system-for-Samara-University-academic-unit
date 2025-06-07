@@ -1,0 +1,380 @@
+/**
+ * Samara University Academic Performance Evaluation System
+ * Management UI Stylesheet
+ */
+
+/* ===== Management Header ===== */
+.management-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1030;
+    background: var(--primary-color);
+    border-bottom: 2px solid var(--primary-dark);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.management-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 1.5rem;
+}
+
+.management-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.management-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.management-breadcrumb {
+    margin-bottom: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+.management-breadcrumb .breadcrumb-item {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.management-breadcrumb .breadcrumb-item.active {
+    color: white;
+}
+
+.management-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.management-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.header-logo {
+    height: 40px;
+    margin-right: 0.75rem;
+}
+
+.sidebar-toggler {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.25rem 0.75rem;
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar-toggler:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.user-dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.user-dropdown:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.user-dropdown-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.user-dropdown-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-dropdown-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-dropdown-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.user-dropdown-role {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.user-dropdown-toggle {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.notification-dropdown {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.notification-dropdown-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.notification-dropdown-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0.25rem;
+    font-size: 0.7rem;
+    padding: 0.15rem 0.35rem;
+    border-radius: 50%;
+    background-color: #dc3545;
+    color: white;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    height: calc(100vh - 70px);
+    width: 260px;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    z-index: 1020;
+}
+
+.sidebar-header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-very-light);
+    color: var(--primary-color);
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.user-role {
+    font-size: 0.75rem;
+    color: var(--primary-color);
+}
+
+.sidebar-divider {
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sidebar-divider:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    right: 1rem;
+    height: 1px;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.sidebar-divider-text {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.5rem;
+    background-color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    margin: 0.25rem 0;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: #495057;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.sidebar-link:hover {
+    background-color: var(--primary-very-light);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.sidebar-item.active .sidebar-link {
+    background-color: var(--primary-very-light);
+    color: var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+}
+
+.sidebar-icon {
+    margin-right: 0.75rem;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar-text {
+    flex: 1;
+}
+
+.sidebar-badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.35rem;
+}
+
+.sidebar.collapsed {
+    width: 70px;
+}
+
+.sidebar.collapsed .sidebar-text,
+.sidebar.collapsed .user-info,
+.sidebar.collapsed .sidebar-divider-text,
+.sidebar.collapsed .sidebar-badge {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-user {
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.sidebar.collapsed .user-avatar {
+    margin-right: 0;
+}
+
+.sidebar.collapsed .sidebar-link {
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+.sidebar.collapsed .sidebar-icon {
+    margin-right: 0;
+    font-size: 1.25rem;
+}
+
+/* ===== Dashboard Content ===== */
+.dashboard-content {
+    margin-left: 260px;
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+    background-color: #f8f9fc;
+}
+
+.dashboard-content.expanded {
+    margin-left: 70px;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 991.98px) {
+    .dashboard-content {
+        margin-left: 0;
+    }
+    
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    
+    .sidebar-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1019;
+        display: none;
+    }
+    
+    .sidebar-backdrop.show {
+        display: block;
+    }
+    
+    body.sidebar-open {
+        overflow: hidden;
+    }
+}

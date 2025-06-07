@@ -1,0 +1,313 @@
+/**
+ * Samara University Academic Performance Evaluation System
+ * Theme Stylesheet
+ */
+
+/* ===== Theme Variables ===== */
+:root {
+    /* Admin Theme (Teal) */
+    --admin-primary: #22AE9A;
+    --admin-primary-dark: #1c8e7d;
+    --admin-primary-light: #7fd9ca;
+    --admin-primary-very-light: #e7f7f5;
+    --admin-primary-rgb: 34, 174, 154;
+
+    /* College Theme (Green) */
+    --college-primary: #2ECC71;
+    --college-primary-dark: #27AE60;
+    --college-primary-light: #82E0AA;
+    --college-primary-very-light: #E9F7EF;
+    --college-primary-rgb: 46, 204, 113;
+
+    /* Dean Theme (Purple) */
+    --dean-primary: #9B59B6;
+    --dean-primary-dark: #8E44AD;
+    --dean-primary-light: #D2B4DE;
+    --dean-primary-very-light: #F4ECF7;
+    --dean-primary-rgb: 155, 89, 182;
+
+    /* Head of Department Theme (Blue) */
+    --head-primary: #3498DB;
+    --head-primary-dark: #2980B9;
+    --head-primary-light: #85C1E9;
+    --head-primary-very-light: #EBF5FB;
+    --head-primary-rgb: 52, 152, 219;
+
+    /* HRM Theme (Orange) */
+    --hrm-primary: #E67E22;
+    --hrm-primary-dark: #D35400;
+    --hrm-primary-light: #F0B27A;
+    --hrm-primary-very-light: #FDF2E9;
+    --hrm-primary-rgb: 230, 126, 34;
+
+    /* Staff Theme (Indigo) */
+    --staff-primary: #6A5ACD;
+    --staff-primary-dark: #483D8B;
+    --staff-primary-light: #9E91E7;
+    --staff-primary-very-light: #F0EEF9;
+    --staff-primary-rgb: 106, 90, 205;
+}
+
+/* ===== Theme Classes ===== */
+.admin-theme {
+    --primary-color: var(--admin-primary);
+    --primary-dark: var(--admin-primary-dark);
+    --primary-light: var(--admin-primary-light);
+    --primary-very-light: var(--admin-primary-very-light);
+    --primary-rgb: var(--admin-primary-rgb);
+}
+
+.college-theme {
+    --primary-color: var(--college-primary);
+    --primary-dark: var(--college-primary-dark);
+    --primary-light: var(--college-primary-light);
+    --primary-very-light: var(--college-primary-very-light);
+    --primary-rgb: var(--college-primary-rgb);
+}
+
+.dean-theme {
+    --primary-color: var(--dean-primary);
+    --primary-dark: var(--dean-primary-dark);
+    --primary-light: var(--dean-primary-light);
+    --primary-very-light: var(--dean-primary-very-light);
+    --primary-rgb: var(--dean-primary-rgb);
+}
+
+.head-theme {
+    --primary-color: var(--head-primary);
+    --primary-dark: var(--head-primary-dark);
+    --primary-light: var(--head-primary-light);
+    --primary-very-light: var(--head-primary-very-light);
+    --primary-rgb: var(--head-primary-rgb);
+}
+
+.hrm-theme {
+    --primary-color: var(--hrm-primary);
+    --primary-dark: var(--hrm-primary-dark);
+    --primary-light: var(--hrm-primary-light);
+    --primary-very-light: var(--hrm-primary-very-light);
+    --primary-rgb: var(--hrm-primary-rgb);
+}
+
+.staff-theme {
+    --primary-color: var(--staff-primary);
+    --primary-dark: var(--staff-primary-dark);
+    --primary-light: var(--staff-primary-light);
+    --primary-very-light: var(--staff-primary-very-light);
+    --primary-rgb: var(--staff-primary-rgb);
+}
+
+/* ===== Theme-specific Elements ===== */
+
+/* Buttons */
+.btn-theme {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-theme:hover, .btn-theme:focus, .btn-theme:active {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: #ffffff;
+}
+
+.btn-outline-theme {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: transparent;
+}
+
+.btn-outline-theme:hover, .btn-outline-theme:focus, .btn-outline-theme:active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Text Colors */
+.text-theme {
+    color: var(--primary-color) !important;
+}
+
+.text-theme-dark {
+    color: var(--primary-dark) !important;
+}
+
+.text-theme-light {
+    color: var(--primary-light) !important;
+}
+
+/* Background Colors */
+.bg-theme {
+    background-color: var(--primary-color) !important;
+    color: #ffffff;
+}
+
+.bg-theme-dark {
+    background-color: var(--primary-dark) !important;
+    color: #ffffff;
+}
+
+.bg-theme-light {
+    background-color: var(--primary-light) !important;
+    color: #ffffff;
+}
+
+.bg-theme-very-light {
+    background-color: var(--primary-very-light) !important;
+    color: var(--primary-dark);
+}
+
+/* Border Colors */
+.border-theme {
+    border-color: var(--primary-color) !important;
+}
+
+.border-theme-dark {
+    border-color: var(--primary-dark) !important;
+}
+
+.border-theme-light {
+    border-color: var(--primary-light) !important;
+}
+
+/* Badges */
+.badge-theme {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.badge-theme-light {
+    background-color: var(--primary-very-light);
+    color: var(--primary-dark);
+}
+
+/* Alerts */
+.alert-theme {
+    background-color: var(--primary-very-light);
+    color: var(--primary-dark);
+    border-color: var(--primary-light);
+}
+
+/* Progress Bars */
+.progress-bar-theme {
+    background-color: var(--primary-color);
+}
+
+/* Nav Tabs */
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    border-color: var(--primary-color) var(--primary-color) #fff;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: var(--primary-light) var(--primary-light) #fff;
+}
+
+/* List Groups */
+.list-group-item.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Cards */
+.card-theme {
+    border-top: 3px solid var(--primary-color);
+}
+
+.card-theme .card-header {
+    background-color: var(--primary-very-light);
+    color: var(--primary-dark);
+}
+
+/* Pagination */
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.page-link {
+    color: var(--primary-color);
+}
+
+.page-link:hover {
+    color: var(--primary-dark);
+}
+
+/* Form Controls */
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.2rem rgba(var(--primary-rgb), 0.25);
+}
+
+/* Custom Checkboxes and Radios */
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(var(--primary-rgb), 0.25);
+}
+
+/* Dropdown */
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--primary-color);
+}
+
+/* Tooltips */
+.tooltip-inner {
+    background-color: var(--primary-color);
+}
+
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    border-top-color: var(--primary-color);
+}
+
+.bs-tooltip-right .arrow::before,
+.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+    border-right-color: var(--primary-color);
+}
+
+.bs-tooltip-bottom .arrow::before,
+.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: var(--primary-color);
+}
+
+.bs-tooltip-left .arrow::before,
+.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+    border-left-color: var(--primary-color);
+}
+
+/* Popovers */
+.popover-header {
+    background-color: var(--primary-very-light);
+    color: var(--primary-dark);
+}
+
+/* Modal */
+.modal-header {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* Tables */
+.table-theme thead th {
+    background-color: var(--primary-very-light);
+    color: var(--primary-dark);
+    border-color: var(--primary-light);
+}
+
+.table-theme.table-hover tbody tr:hover {
+    background-color: var(--primary-very-light);
+}
+
+/* Links */
+a.theme-link {
+    color: var(--primary-color);
+}
+
+a.theme-link:hover {
+    color: var(--primary-dark);
+    text-decoration: none;
+}

@@ -1,0 +1,281 @@
+/**
+ * Samara University Academic Performance Evaluation System
+ * Main Stylesheet
+ */
+
+/* ===== Base Styles ===== */
+:root {
+    /* Primary Colors */
+    --primary-color: #22AE9A;
+    --primary-dark: #1c8e7d;
+    --primary-light: #7fd9ca;
+    --primary-very-light: #e7f7f5;
+    --primary-rgb: 34, 174, 154;
+    
+    /* Secondary Colors */
+    --secondary-color: #6c757d;
+    --secondary-dark: #5a6268;
+    --secondary-light: #a1a8ae;
+    --secondary-very-light: #f8f9fa;
+    --secondary-rgb: 108, 117, 125;
+    
+    /* Text Colors */
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --text-light: #f8f9fa;
+    
+    /* UI Elements */
+    --border-radius: 0.35rem;
+    --box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-primary);
+    background-color: #f8f9fc;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    border-radius: var(--border-radius);
+    padding: 0.375rem 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/* ===== Forms ===== */
+.form-control {
+    border-radius: var(--border-radius);
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #d1d3e2;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.2rem rgba(var(--primary-rgb), 0.25);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+/* ===== Cards ===== */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.card-header {
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    padding: 1rem 1.25rem;
+    border-top-left-radius: var(--border-radius) !important;
+    border-top-right-radius: var(--border-radius) !important;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+/* ===== Alerts ===== */
+.alert {
+    border-radius: var(--border-radius);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.alert-primary {
+    background-color: var(--primary-very-light);
+    color: var(--primary-dark);
+}
+
+/* ===== Badges ===== */
+.badge {
+    font-weight: 600;
+    padding: 0.25em 0.5em;
+    border-radius: 0.25rem;
+}
+
+.badge-primary {
+    background-color: var(--primary-color);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #f8f9fa;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--primary-light);
+    text-decoration: none;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 0.5rem;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* ===== Utilities ===== */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow {
+    box-shadow: var(--box-shadow) !important;
+}
+
+.rounded {
+    border-radius: var(--border-radius) !important;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .navbar-brand img {
+        height: 30px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}

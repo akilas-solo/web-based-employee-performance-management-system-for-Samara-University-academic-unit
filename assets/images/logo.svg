@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Circle -->
+  <circle cx="30" cy="30" r="25" fill="#3498db"/>
+  
+  <!-- Inner Circle -->
+  <circle cx="30" cy="30" r="20" fill="#2980b9"/>
+  
+  <!-- Star Shape -->
+  <path d="M30 10 L33 23 L46 23 L35 31 L39 44 L30 36 L21 44 L25 31 L14 23 L27 23 Z" fill="white"/>
+  
+  <!-- Text -->
+  <text x="65" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Samara University</text>
+  <text x="65" y="45" font-family="Arial, sans-serif" font-size="14" fill="#3498db">Evaluation System</text>
+</svg>

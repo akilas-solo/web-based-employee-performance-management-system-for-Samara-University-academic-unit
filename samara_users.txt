@@ -1,0 +1,47 @@
+Samara University Academic Performance Evaluation System
+User Credentials for Different Roles
+
+Note: All passwords in the database are hashed with bcrypt. The actual password for all users is "password"
+(The hash $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi is the bcrypt hash for "password")
+
+1. Admin Role:
+   Username: admin
+   Email: admin@samarauniversity.edu.et
+   Password: password
+   Full Name: System Administrator
+
+2. HRM Role:
+   Username: hrm
+   Email: hrm@samarauniversity.edu.et
+   Password: password
+   Full Name: HR Manager
+
+3. College Role:
+   Username: cocs_rep
+   Email: cocs@samarauniversity.edu.et
+   Password: password
+   Full Name: Computing College Rep
+
+4. Dean Role:
+   Username: cocs_dean
+   Email: cocs.dean@samarauniversity.edu.et
+   Password: password
+   Full Name: Dr. Abebe Bekele
+
+5. Head of Department Role:
+   Username: cs_head
+   Email: cs.head@samarauniversity.edu.et
+   Password: password
+   Full Name: Dr. Solomon Mulugeta
+
+6. Staff Role:
+   Username: cs_staff1
+   Email: cs.staff1@samarauniversity.edu.et
+   Password: password
+   Full Name: Alem Tsegaye
+   
+
+
+ web based employee performance 
+management system for Samara University
+academic unit
