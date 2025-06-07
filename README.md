@@ -1,6 +1,12 @@
 # Samara University Academic Performance Evaluation System
 
-## Overview
+![Admin Dashboard Screenshot](assets/images/admin_dashboard.png)
+
+![Dean Dashboard Screenshot](assets/images/dean.png)
+
+![Heme Screenshot](assets/images/Home.png)
+
+## Overview![alt text](image.png)
 
 The Samara University Academic Performance Evaluation System is a comprehensive web-based application designed to streamline and standardize the academic performance evaluation process for staff members across different colleges and departments. The system provides role-based access control, allowing different stakeholders (administrators, deans, college representatives, and department heads) to participate in the evaluation process according to their responsibilities.
 
