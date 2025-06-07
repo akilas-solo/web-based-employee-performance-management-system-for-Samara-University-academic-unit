@@ -1,10 +1,12 @@
 # Samara University Academic Performance Evaluation System
 
+![Heme Screenshot](assets/images/Home.png)
+
 ![Admin Dashboard Screenshot](assets/images/admin_dashboard.png)
 
 ![Dean Dashboard Screenshot](assets/images/dean.png)
 
-![Heme Screenshot](assets/images/Home.png)
+
 
 ## Overview![alt text](image.png)
 
